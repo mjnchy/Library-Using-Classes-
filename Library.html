@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="Library.css">
+</head>
+<body>
+    <div id="wrapper">
+        <div id="nav">
+            <nav id="navbar">
+                <div id="nav-logo"><i class="fa-solid fa-user"></i></div>
+                <div id="nav-welcome">Welcome To Your Library</div>
+                <div id="navbar-nav">
+                    <button class="btn" id="sort"><i class="fa-solid fa-sort"></i> Sort</button>
+                    <button class="btn" id="about"><i class="fa-solid fa-circle-info"></i> About</button>
+                    <button class="btn" id="sort"><i class="fa-solid fa-user-group"></i></i> Contact</button>
+                </div>
+            </nav>
+        </div>
+
+        <div id="main-content">
+            <button id="add-card" class="card btn"><i class="fa-solid fa-circle-plus add-card-icon"></i><h4>Add Book</h4></button>
+        </div>
+    </div>
+
+    <div id="form-hidden" class="form">
+        <button class="quit btn"><i class="fa-solid fa-xmark"></i></button>
+        <form action="" id="form-input">
+            <h2>Book Details</h2>
+            
+            <label for="name"></label>
+            <input type="text" name="name" id="name" placeholder="Name" required>
+
+            <label for="author"></label>
+            <input type="text" name="author" id="author" placeholder="Author" required>
+
+            <div id="date-and-read">
+                <div id="date">
+                    <label for="release-date"></label>
+                    <input type="date" name="release-date" id="release-date" placeholder="Release Date">
+                </div>
+                
+                <div id="read">
+                    <input type="radio" name="read" id="read">
+                    <label for="read">Read</label>
+                </div>
+            </div>
+
+            <button id="submit">Add</button>
+        </form>
+    </div>
+
+    <script src="Library.js"></script>
+    <script src="https://kit.fontawesome.com/25a7d4ef82.js" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,216 @@
+/* CSS Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* CSS Starts: */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(29, 28, 28);
+    color: rgb(182, 182, 182);
+}
+
+.btn {
+	color: rgb(182, 182, 182);
+	background-color: transparent;
+	border: none;
+}
+
+.btn:hover {
+	cursor: pointer;
+}
+
+#wrapper {
+	position: relative;
+}
+
+/* Navbar CSS Starts Here: */
+#nav {
+	background-color: rgb(54, 53, 53);
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+	padding: 10px 0;
+	width: calc(100% - 35px);
+}
+
+/* Navbar CSS Ends Here:*/
+/* Main Grid CSS Starts Here:*/
+#main-content {
+	margin: 20px;
+	display: grid;
+	grid-template: repeat(4, 1fr) / repeat(auto-fill, minmax(200px, 1fr));
+	gap: 2%;
+}
+
+.card {
+	position: relative;
+	width: 100%;
+	height: 275px;
+	text-align: center;
+	border-radius: 10px;
+	background-color: rgb(41, 40, 40);
+}
+
+#add-card {
+	background-color: rgba(41, 40, 40, 0.3);
+	font-size: 1.25rem;
+}
+
+.add-card-icon {
+	font-size: 1.65rem;
+	margin: 15px;
+}
+
+
+/* Main Grid CSS Ends Here:*/
+/* Form CSS Starts Here: */
+#form-hidden {
+	display: none;
+}
+
+.quit {
+	font-size: 1.25rem;
+	margin: 10px;
+	position: relative;
+	inset: 0 calc(90% - 1.25rem);
+}
+
+.form {
+	background-color: rgb(54, 53, 53);
+	width: 300px;
+	height: 400px;
+	border-radius: 12px;
+	position: absolute;
+	inset: calc(50% - 150px);
+	transition: ease-out, 150ms;
+}
+
+form > h2 {
+	font-size: 1.5rem;
+	text-align: center;
+	margin: 30px auto 40px;
+}
+
+form > input {
+	width: 80%;
+	margin: 12px 10%;
+}
+
+form > input, #date > input, form > #submit {
+	height: 27px;
+	border: none;
+	border-radius: 5px;
+}
+
+#date-and-read {
+	width: 80%;
+	margin: 12px auto;
+	display: flex;
+	justify-content: space-between;
+	gap: 10px;
+}
+
+#date {
+	flex: 1 1 70%;
+}
+
+#release-date {
+	width: 95%;
+}
+
+#read {
+	flex: 1 1 25%;
+}
+
+input {
+	background-color: rgb(192, 192, 192);
+}
+
+form > #submit {
+	height: 35px;
+	width: 40%;
+	margin: 50px 30%;
+}
+
+
+/* Card CSS Ends Here */
+/* Card Content CSS Starts Here: */
+h2.card-content {
+	font-size: 1.5rem;
+	margin: 30px auto 10px;
+}
+
+h4.card-content {
+	font-size: 1.25rem;
+	margin-bottom: 10px;
+}
+
+h5.card-content {
+	margin: 15px auto 10px;
+}
+
+.content-btn-div {
+	position: absolute;
+	inset: auto 5px 20px auto;
+}
+
+.content-btn-div > button {
+	width: 60px;
+	height: 60px;
+	margin: 10px 6px 1px;
+	border: none;
+	border-radius: 50%;
+}
+
+.content-btn-div > .fa-check {
+	transition: all, 200ms;
+	background-color: rgb(65, 123, 209);
+}
