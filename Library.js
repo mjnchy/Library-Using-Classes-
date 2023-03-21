@@ -75,9 +75,14 @@ class Book {
     const form = document.querySelector('#form-input');
     form.addEventListener('submit', (e) => {
         e.preventDefault()
-        let book = new Book();
-        bookArray[book.name] = book;
-        book.appendElements();
+        if (!bookArray.hasOwnProperty(`${form[0].value}`)) {
+            let book = new Book();
+            bookArray[book.name] = book;
+            book.appendElements();
+            form.reset();
+        }
+
+        else alert('This book is already in your library. Please enter a new valid book.');
     });
 })();
 
